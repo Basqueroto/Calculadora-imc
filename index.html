@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Calculadora de imc</title>
+</head>
+<body>
+    <main>
+        <div id="info">
+            <div id="title">
+                <h1>Calculadora de IMC</h1>
+            </div>
+            <div id="para">
+                <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+            </div>
+        </div>
+        <div id="formDiv">
+            <form action="" id="form">
+                <div class="lab">
+                    <label for="altura">Altura</label>
+                    <input type="number" name="altura" id="alt" required>
+                </div>   
+                <div class="lab">
+                    <label for="massa">Massa</label>
+                    <input type="number" name="massa" id="mas" required>
+                </div>    
+                <div id="but">
+                    <button type="submit" id="enviar">Calcular</button>
+                    <button type="reset" id="limpar">Limpar</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="mostrar">
+            <div id="alinhar">
+                <div id="peso">
+                    <h2>Seu imc é <span id="seu"></span></h2>
+                </div>
+            </div>
+            <div id="categoria">
+                <span id="cate"></span>
+            </div>
+        </div>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
